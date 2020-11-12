@@ -9,10 +9,8 @@ import 'package:gsy_github_app_flutter/common/utils/common_utils.dart';
 import 'package:gsy_github_app_flutter/common/utils/event_utils.dart';
 import 'package:gsy_github_app_flutter/common/utils/navigator_utils.dart';
 import 'package:gsy_github_app_flutter/model/RepoCommit.dart';
-import 'package:gsy_github_app_flutter/page/repos/repository_detail_page.dart';
 import 'package:gsy_github_app_flutter/page/repos/scope/repos_detail_model.dart';
 import 'package:gsy_github_app_flutter/widget/gsy_event_item.dart';
-import 'package:gsy_github_app_flutter/widget/gsy_common_option_widget.dart';
 import 'package:gsy_github_app_flutter/widget/gsy_icon_text.dart';
 import 'package:gsy_github_app_flutter/widget/pull/nested/gsy_nested_pull_load_widget.dart';
 import 'package:gsy_github_app_flutter/widget/pull/nested/gsy_sliver_header_delegate.dart';
@@ -262,8 +260,8 @@ class ReposDetailInfoPageState extends State<ReposDetailInfoPage>
         delegate: GSYSliverHeaderDelegate(
           maxHeight: headerSize,
           minHeight: headerSize,
+          vSyncs: this,
           snapConfig: FloatingHeaderSnapConfiguration(
-            vsync: this,
             curve: Curves.bounceInOut,
             duration: const Duration(milliseconds: 10),
           ),
@@ -288,8 +286,8 @@ class ReposDetailInfoPageState extends State<ReposDetailInfoPage>
             maxHeight: 60,
             minHeight: 60,
             changeSize: true,
+            vSyncs: this,
             snapConfig: FloatingHeaderSnapConfiguration(
-              vsync: this,
               curve: Curves.bounceInOut,
               duration: const Duration(milliseconds: 10),
             ),

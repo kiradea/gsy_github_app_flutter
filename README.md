@@ -70,8 +70,8 @@
 
 ## 相关文章
 
-- ## [Flutter 完整实战实战系列文章专栏](https://juejin.im/collection/5db25bcff265da06a19a304e)
-- ## [Flutter 番外的世界系列文章专栏](https://juejin.im/collection/5db25d706fb9a069f422c374)
+- ## [Flutter 完整实战实战系列文章专栏](http://mp.weixin.qq.com/mp/homepage?__biz=Mzg3NTA3MDIxOA==&hid=2&sn=679ad0212470f5155c4412e678411374&scene=18#wechat_redirect)
+- ## [Flutter 番外的世界系列文章专栏](http://mp.weixin.qq.com/mp/homepage?__biz=Mzg3NTA3MDIxOA==&hid=3&sn=bf37119ae2b741a1c71125538bf0cd8d&scene=18#wechat_redirect)
 
 ----
 - ## [Flutter 独立简单学习演示项目](https://github.com/CarGuo/gsy_flutter_demo)
@@ -80,7 +80,7 @@
 
 ## 编译运行流程
 
-1、配置好Flutter开发环境(目前Flutter SDK 版本 **1.22.1**)，可参阅 [【搭建环境】](https://flutterchina.club)。
+1、配置好Flutter开发环境(目前Flutter SDK 版本 **1.22.3**)，可参阅 [【搭建环境】](https://flutterchina.club)。
 
 2、clone代码，执行`Packages get`安装第三方包。(因为某些不可抗力原因，国内可能需要设置代理: [代理环境变量](https://flutterchina.club/setup-windows/))
 
@@ -104,7 +104,7 @@
 
 ### 4、运行之前请注意下
 
->### 1、本地 Flutter SDK 版本 1.22 ； 2、是否执行过 `flutter pub get`；3、 网络等问题参考: [如果出现登陆失败或者请求失败 ](https://github.com/CarGuo/gsy_github_app_flutter/issues/643)
+>### 1、本地 Flutter SDK 版本 1.22.3 ； 2、是否执行过 `flutter pub get`；3、 网络等问题参考: [如果出现登陆失败或者请求失败 ](https://github.com/CarGuo/gsy_github_app_flutter/issues/643)
 
 
 ### 下载
@@ -149,7 +149,7 @@
 
 ### 第三方框架
 
->当前 Flutter SDK 版本 1.22.1
+>当前 Flutter SDK 版本 1.22.3
 
 | 库                          | 功能             |
 | -------------------------- | -------------- |

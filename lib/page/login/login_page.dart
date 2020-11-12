@@ -1,14 +1,10 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_redux/flutter_redux.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:gsy_github_app_flutter/common/config/config.dart';
-import 'package:gsy_github_app_flutter/common/config/ignoreConfig.dart';
 import 'package:gsy_github_app_flutter/common/local/local_storage.dart';
 import 'package:gsy_github_app_flutter/common/localization/default_localizations.dart';
 import 'package:gsy_github_app_flutter/common/net/address.dart';
-import 'package:gsy_github_app_flutter/common/net/api.dart';
 import 'package:gsy_github_app_flutter/common/utils/navigator_utils.dart';
 import 'package:gsy_github_app_flutter/redux/gsy_state.dart';
 import 'package:gsy_github_app_flutter/redux/login_redux.dart';
@@ -190,16 +186,16 @@ mixin LoginBLoC on State<LoginPage> {
         gravity: ToastGravity.CENTER,
         toastLength: Toast.LENGTH_LONG);
     return;
-    if (_userName == null || _userName.isEmpty) {
-      return;
-    }
-    if (_password == null || _password.isEmpty) {
-      return;
-    }
-
-    ///通过 redux 去执行登陆流程
-    StoreProvider.of<GSYState>(context)
-        .dispatch(LoginAction(context, _userName, _password));
+    // if (_userName == null || _userName.isEmpty) {
+    //   return;
+    // }
+    // if (_password == null || _password.isEmpty) {
+    //   return;
+    // }
+    //
+    // ///通过 redux 去执行登陆流程
+    // StoreProvider.of<GSYState>(context)
+    //     .dispatch(LoginAction(context, _userName, _password));
   }
 
   oauthLogin() async {
